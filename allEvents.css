@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    background-color: #2d3436;
+    padding:0;
+    height: 100%;
+  }
+
+.image{
+    max-width:100%;
+	max-height:100%;
+	border-radius: 10px;
+}
+.pad{
+	padding-left:10px;
+}
+
+.text{
+	border:2px solid rgb(8, 108, 0);
+	padding:2px;
+	border-radius:10px;
+	color:white;
+	background-color:rgb(8, 108, 0);;
+}
+.boldd{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.kontenjer{
+   padding: 10px;
+   padding-left:50px;
+   padding-right:50px;
+   padding-top:1%;
+   overflow: hidden;
+   margin-left:10%;
+   margin-right:10%;
+}
+.poz{
+	position:relative;
+	right:50px;
+	bottom:5px;
+	width:fit-content;
+	padding:3px;
+}
+.prostor{
+	width:auto;
+	height:5%;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:25px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.boja{
+	color:rgb(8, 108, 0);
+}
+
+.display1{
+	display:grid;
+	grid-template-columns:25% 75%;
+}
+.div1{
+	border-radius: 15px;
+	max-width:100%;
+	height:200px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.div1::before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index:-1;
+	background:#3498db;
+	z-index:-1;
+	transition:1s;
+}
+.btn::before{
+	width:100%;
+	height:0;
+	transform:translate(-50%,-50%) rotate(45deg);
+}
+.btn:hover::before{
+	height:1000%;
+}
+
+@media screen and (max-width: 1500px) {
+.display1{
+	display:grid;
+	grid-template-columns:30% 70%;
+}
+	
+}
+@media screen and (max-width: 1250px) {
+	.display1{
+	display:grid;
+	grid-template-columns:30% 70%;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:20px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.image{
+    max-width:85%;
+	max-height:85%;
+
+}
+.div1{
+		border-radius: 15px;
+	max-width:100%;
+	height:150px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+}	
+
+@media screen and (max-width: 930px)
+{
+	.display1{
+	display:grid;
+	grid-template-columns:30% 70%;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:15px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.image{
+    max-width:90%;
+	max-height:90%;
+	
+
+}
+.div1{
+		border-radius: 15px;
+	max-width:100%;
+	height:110px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+.boja{
+	color:rgb(8, 108, 0);
+}
+}
+
+@media screen and (max-width: 739px)
+{
+.display1{
+	display:grid;
+	grid-template-columns:30% 70%;
+}
+
+.image{
+    max-width:100%;
+	max-height:100%;
+
+}
+.div1{
+		border-radius: 15px;
+	max-width:100%;
+	height:85px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:12px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.boja{
+	color:rgb(8, 108, 0);
+}
+}
+@media screen and (max-width: 627px)
+{
+					.display1{
+	display:grid;
+	grid-template-columns:30% 70%;
+}
+
+.image{
+    max-width:100%;
+	max-height:100%;
+
+}
+.div1{
+		border-radius: 15px;
+	max-width:100%;
+	height:80px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:10px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.boja{
+	border:2px solid rgb(8, 108, 0);
+	background-color:rgb(8, 108, 0);
+	color:white;
+	font-style:bold;
+}
+}
+
+@media screen and (max-width: 500px)
+{
+	.pad{
+		margin-left:20px;
+	}
+
+	.display1{
+			display:block;
+}
+.image{
+    max-width:150px;
+	max-height:auto;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:10px;
+
+}
+.poz{
+	position:relative;
+	right:50px;
+	bottom:-8px;
+}
+.div1{
+	border-radius: 15px;
+	max-width:100%;
+	height:240px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:12px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.boja{
+	color:rgb(8, 108, 0);
+}
+
+
+.btn::before{
+	width:100%;
+	height:0;
+	transform:translate(-50%,-50%);
+}
+.kontenjer{
+   padding: 10px;
+   padding-left:50px;
+   padding-right:50px;
+   padding-top:1%;
+   overflow: hidden;
+   margin-left:2%;
+   margin-right:2%;
+}
+}
+@media screen and (max-width: 380px)
+{
+	.pad{
+		margin-left:20px;
+	}
+	.display1{
+			display:block;
+}
+.image{
+    max-width:150px;
+	max-height:auto;
+	  margin-left: auto;
+  margin-right: auto;
+	margin-bottom:10px;
+
+}
+.div1{
+	border-radius: 15px;
+	max-width:100%;
+	height:220px;
+	padding:20px;
+	background:none;
+	cursor:pointer;
+	transition:0.8;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.naslov{
+	color:white;
+	font-family:"montserrat";
+	font-size:12px;
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.boja{
+	color:rgb(8, 108, 0);
+}
+.poz{
+	position: relative;
+	right:50px;
+	bottom:-8px;
+}
+.btn::before{
+	width:100%;
+	height:0;
+	transform:translate(-50%,-50%);
+}
+.kontenjer{
+   padding: 10px;
+   padding-top:1%;
+   overflow: hidden;
+   margin-left:0%;
+   margin-right:0%;
+}
+}

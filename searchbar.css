@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+  
+
+
+  .afterlogo {
+    margin-top:0;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    height:58px;
+  }
+  
+  .afterlogo > h3 {
+    font-weight: normal;
+  }
+  
+  
+  .afterlogo > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .afterlogo > div:after {
+    content: "";
+    background: black;
+    width: 4px;
+    height: 14px;
+    position: absolute;
+    top: 41px;
+    right: 2px;
+    transform: rotate(135deg);
+    box-shadow: 1px 0 rgb(255, 255, 255); 
+  }
+  
+  .afterlogo > div > input {
+    /* color: black; */
+    font-size: 16px;
+    background: transparent;
+    width: 5px;
+    height: 5px;
+    padding: 10px;
+    margin-top:12px;
+    border: solid 3px black;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 1px black;
+    transition: width 0.5s, background-color 0.5s;
+  }
+  
+  .afterlogo > div > input::placeholder {
+    opacity: 0.6;
+    color:white;
+    }
+
+  
+  .afterlogo > div > input::-ms-placeholder {
+    color: #ffffff;
+  }
+  
+  .afterlogo > div > input::-ms-input-placeholder {
+    color: #ffffff;
+  }
+  
+  .afterlogo > div > input:focus,
+  .afterlogo > div > input:valid {
+    width: 200px;
+    background:rgba(97, 97, 97, 0.3);
+    color:white;
+    font-weight: 500;
+  }
+
+

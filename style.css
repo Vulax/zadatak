@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.container input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top:11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index:5;
+    
+  }
+
+.Polje:hover{
+    background-color: rgb(255, 255, 255)
+
+}
+
+.Polje:focus{
+    background-color: rgb(223, 222, 222);
+}
+
+.Polje:focus::placeholder{
+    color: transparent;
+}
+
+.Polje::placeholder{
+    transition: all 0.4s ease;
+}
+
+  
+label{
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-weight: 500;
+    background-color: rgba(223, 222, 222, 0.25);
+}
+
+.container input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top:11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.container input[type=number]{
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top:11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+.container input[type=number]::placeholder{
+    font-size:13px;
+}
+
+.container input[type=number]::-webkit-inner-spin-button,
+.container input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.container input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+textarea{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top:11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+.container {
+    max-width: 550px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    padding:5px;
+    background-color: white;
+    /* width: fit-content; */
+    width:450px;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-bottom:20px;
+    /* max-width: 80%; */
+    font-size:14px;
+    /* margin-left:10%; */
+    /* margin-right:10%; */
+    
+  }
+
+  .container ::placeholder{
+      font-size:13px;
+  }
+
+.forme{
+    padding: 30px;
+    padding-top: 50px;
+    margin: 0 10%;
+    margin-top: 30px;
+    box-shadow: 0 0 16px 2px rgb(223, 222, 222);
+    border-radius: 5px;
+}
+
+.slogan{
+    margin-top: 100px;
+    max-width: 350px;
+    flex: 2 2;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 60px;
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .slogan {
+      display: none;
+    }
+  }
+
+.slogan span{
+    margin-left:20px;
+    color:rgb(92, 92, 92);
+}
+
+h1{
+    color:black;
+}
+
+.flex {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
